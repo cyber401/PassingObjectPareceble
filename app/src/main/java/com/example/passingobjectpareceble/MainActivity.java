@@ -20,10 +20,11 @@ public class MainActivity extends AppCompatActivity {
                 sendingData();
             }
         });
+
     }
     public void sendingData(){
         Intent intent = new Intent(MainActivity.this, ShowEmployesDetail.class);
-        intent.putExtra("employeData", new EmployeesDetails(9914, "Lalit Kumar", "Gali no. 5", "Chandigarh", 60000.8f, true));
+        intent.putExtra("employeData", new EmployeesDetails(9914, "Lalit Kumar", "Gali no. 5", "Chandigarh", (float) 60000.8, true));
         startActivity(intent);
     }
 }
